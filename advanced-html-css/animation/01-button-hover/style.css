@@ -16,4 +16,10 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+  will-change: transform; /* If we want to avoid flickering and optimize the animation forcing GPU rendering */
+  transition: transform ease-in-out 0.3s;
+}
+
+button:hover {
+  transform: scale(1.2);
 }
